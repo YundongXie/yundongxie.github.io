@@ -2,7 +2,7 @@
 layout: single
 author_profile: true
 permalink: /
-title: "Yundong Xie"
+title: ""
 ---
 
 # Yundong Xie (谢云东)
