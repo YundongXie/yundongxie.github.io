@@ -5,32 +5,57 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
+---
+layout: archive
+title: "Publications"
+permalink: /publications/
+author_profile: true
+---
 
-{% include base_path %}
+## Overview
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+I have published 28 academic papers in journals such as *Journal of the Association for Information Science and Technology*, *Journal of Informetrics*, and *Scientometrics*. My publications focus on scientometrics, informetrics, research evaluation, scientific innovation, journal assessment, and data-driven science policy.
 
+Selected publications are listed below.
+
+---
+
+## Selected Publications
+
+1. Liu, Y., **Xie, Y.***, Shen, X., & Wu, D. (2025). Artificial intelligence use and scientific innovation. *Journal of the Association for Information Science and Technology*.
+
+2. Cheng, J., **Xie, Y.***, & Wu, Q. (2025). Do novel papers attract more social attention? *Journal of Informetrics*, 19(3), 101710.
+
+3. Xie, Y., Wu, Q.*, Wang, Y., Hou, L., & Liu, Y. (2024). Does the handling time of scientific papers relate to their academic impact and social attention? Evidence from *Nature*, *Science*, and *PNAS*. *Journal of Informetrics*, 18(2), 101504.
+
+4. Hou, L., Wu, Q.*, & **Xie, Y.** (2024). Does open identity of peer reviewers positively relate to citations? *Journal of Informetrics*, 18(1), 101489.
+
+5. Yang, R., Wu, Q.*, & **Xie, Y.** (2023). Are scientific articles involving corporations associated with higher citations and views? An analysis of the top journals in business research. *Scientometrics*, 128(10), 5659–5685.
+
+6. Wang, Y., **Xie, Y.***, Wang, D., Guo, L., & Zhou, R. (2022). Do cover papers get better citations and usage counts? An analysis of 42 journals in cell biology. *Scientometrics*, 127(7), 3793–3813.
+
+7. Hou, L., Wu, Q.*, & **Xie, Y.** (2022). Does early publishing in top journals really predict long-term scientific success in the business field? *Scientometrics*, 127(11), 6083–6107.
+
+8. Xie, Y., Wu, Q.*, Zhang, P., & Li, X. (2020). Information Science and Library Science journal subject categorisation and comparison based on editorship information. *Journal of Informetrics*, 14(4), 101069.
+
+9. Xie, Y., Wu, Q.*, & Li, X. (2019). Editorial team scholarly index: An alternative indicator for evaluating academic journal reputation. *Scientometrics*, 120(3), 1333–1349.
+
+---
+
+## Chinese Publications
+
+1. 郭峥, **谢云东***, 吴登生. (2025). 基于颠覆性指数的科研机构创新水平测度与实证分析. *管理评论*. 已录用.
+
+2. 谢云东, 王叶竹*, 吴登生. (2025). 基于编委学术指数的期刊影响力评价方法与实证研究. *中国科技期刊研究*, 36(3), 1–10.
+
+3. 张朋, 谢云东, 吴强*, 刘元元, 侯利, 高星雨, 郑圣明, 余玉刚. (2022). 我国管理科学与工程学科研究热点及演化趋势. *管理科学学报*, 25(5), 1–12.
+
+4. 丁秀莲, 吴强, 张朋*, 谢云东, 刘元元, 侯利, 高星雨, 郑圣明, 余玉刚. (2022). 基于管理类国际权威期刊的中国管理科学与工程学科研究现状分析. *管理学报*, 19(2), 159–168.
+
+---
+
+## Notes
+
+`*` indicates corresponding author.
 
 
